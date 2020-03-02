@@ -20,6 +20,7 @@ def remove_emphasis(str):
 def remove_link(str):
     return re.sub(r"\[\[(?:([^\|]+?)|(?:(?:[^\|]+?)\|([^\|]+?)))\]\]",r"\1\2",str)
 
+#nlp29
 def get_flag_url(title):
 
     url = "https://ja.wikipedia.org/w/api.php"
