@@ -11,7 +11,7 @@ def make_neko_txt_mecab():
 def make_morpheme():
     with open("neko.txt.mecab") as f:
         morpheme_list = []
-        for line in f:
+        for line in f.readlines()[1:]:
                 if len(line.split()) < 2:
                     return
                 surface = line.split()[0]
